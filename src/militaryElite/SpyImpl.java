@@ -30,7 +30,7 @@ public class SpyImpl extends SoldierImpl implements Soldier{
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder();
-        sb.append(String.format("Name: %s %s Id: %d",getFirstName(),getLastName(),getId())).append(System.lineSeparator());
+        sb.append(String.format("%s",super.toString())).append(System.lineSeparator());
         sb.append(String.format("Code Number: %s", codeNumber)).append(System.lineSeparator());
         return sb.toString().trim();
     }

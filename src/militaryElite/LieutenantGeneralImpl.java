@@ -3,11 +3,12 @@ package militaryElite;
 import java.util.*;
 import java.util.stream.Collectors;
 
-public class LieutenantGeneralImpl extends PrivateImpl implements LieutenantGeneral {
+public class LieutenantGeneralImpl extends PrivateImpl implements Soldier,LieutenantGeneral {
     private Set<Soldier> privateSet;
     public LieutenantGeneralImpl(int id, String firstName, String lastName, double salary) {
         super(id, firstName, lastName, salary);
         this.privateSet = new LinkedHashSet<>();
+        getFirstName();
 
     }
 

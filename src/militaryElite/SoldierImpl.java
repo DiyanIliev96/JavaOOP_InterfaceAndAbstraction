@@ -26,4 +26,9 @@ public class SoldierImpl implements Soldier{
     public String getLastName() {
         return lastName;
     }
+
+    @Override
+    public String toString() {
+        return String.format("Name: %s %s Id: %d", getFirstName(), getLastName(), getId());
+    }
 }
